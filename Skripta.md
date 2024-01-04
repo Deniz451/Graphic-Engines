@@ -4,9 +4,9 @@
 
 ### Úvod
 V této prezentaci si vysvětlíme co jsou to herní a grafický enginy. Probereme jejich historii, jak vypadají dnes a jak budou moct vypadat v budoucnosti. Ukážeme si pár příkladů nejznámějších enginů a co se s nimi dá vytvořit a nakonec, v praktický ukázce, budeme samy pracovat v jednom z herních enginů.
-###Definice
+### Definice
 Co je to vlastně takový herní či grafický engin? Je to určitý softwarový systém, který přenáší digitální data na naší obrazovku. Je klíčovým prvkem v mnoha odvětvích, jako například architektura, 3D modeling, filmový průmysl, ale zejména herní průmysl.
-###Důležitost
+### Důležitost
 Díky grafickým a herním enginům dokážeme dnes dělat již skoro fotorealistické hry či efekty. Když se podíváme například na filmový průmysl, tak grafický enginy, mimo CGI, pomáhají i tak, že namísto toho, aby se celá scéna natáčela ve skutečnosti jen proto, aby se následně škrtla, může se nejdřív „načrtnout“ v těchto enginech a pak se teprve rozhodne, zda se do filmu zahrne či ne. Šetří se tím tedy čas i prostředky. U herního průmyslu, pomáhají enginy například v tom, že daná hra je schopna se adaptovat a běžet na vícero platformách bez většího zasahování do kódu, je tedy podporován cross-platform development.
 
 
