@@ -54,7 +54,7 @@ Jako poslední si řekneme nějaké predikce a trendy, které by se mohli ve vý
 
 Jako poslední věc si dnes ukážeme praktickou ukázku. Podíváme se a vysvětlíme si jak funguje snadná simulace vody v Unity enginu, o kterém jsme dnes již mluvili. Jak můžeme vidět z obrázků, voda po spuštění programu spadne a chová se asi tak, jak byste čekali. To lze docílit v podstatě dost snadno. V principu jde o velké množství objektů vedle sebe, který dělají iluzi vody. Představte si že byste pustili se kutálet do podobné dráhy, jako je na obrázku, 100 golfových míčků. Zachovali by se podobně jako voda. V programu tedy těchto míčků, nebo-li koulí, nemáme 100, ale něco přes 400. Jak na všech těchto míčkách, tak i na platformách, je zapnuta funkce rigid body a box colidor, o které jsme si dnes také již něco říkali. Díky této funkci mají koule gravitaci a padají směrem dolů a narážejí na platformy (ty mají rigid body static a díky tomu je gravitace neovlivňuje). Pokud bychom to ale nechali takhle, program by vypadal tak, jak ho popisujeme a to tedy pouze hodně míčků, který padají dolů. Abychom docílili efektu vody, musíme to ještě trochu poupravit. K tomu nám stačí upravit barvu, pozměnit tvar koule a trochu se pohrabat v nastavení, jako například dodat blur, a tím odstraníme nechtěné mezery mezi koulemi. Díky tomu už program opravdu vypadá jako simulace opravdové vody.
 
-![Alt text](obrazky/obr1.png)
+![Alt text](obrazky/obr1.png =250px)
 ![Alt text](obrazky/obr2.png)
 ![Alt text](obrazky/obr3.png)
 ![Alt text](obrazky/obr4.png)
