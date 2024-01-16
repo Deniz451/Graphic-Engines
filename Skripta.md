@@ -52,9 +52,21 @@ Jako poslední si řekneme nějaké predikce a trendy, které by se mohli ve vý
 
 ## 6. Praktická ukázka 
 
+### Popis
 Jako poslední věc si dnes ukážeme praktickou ukázku. Podíváme se a vysvětlíme si jak funguje snadná simulace vody v Unity enginu, o kterém jsme dnes již mluvili. Jak můžeme vidět z obrázků, voda po spuštění programu spadne a chová se asi tak, jak byste čekali. To lze docílit v podstatě dost snadno. V principu jde o velké množství objektů vedle sebe, který dělají iluzi vody. Představte si že byste pustili se kutálet do podobné dráhy, jako je na obrázku, 100 golfových míčků. Zachovali by se podobně jako voda. V programu tedy těchto míčků, nebo-li koulí, nemáme 100, ale něco přes 400. Jak na všech těchto míčkách, tak i na platformách, je zapnuta funkce rigid body a box colidor, o které jsme si dnes také již něco říkali. Díky této funkci mají koule gravitaci a padají směrem dolů a narážejí na platformy (ty mají rigid body static a díky tomu je gravitace neovlivňuje). Pokud bychom to ale nechali takhle, program by vypadal tak, jak ho popisujeme a to tedy pouze hodně míčků, který padají dolů. Abychom docílili efektu vody, musíme to ještě trochu poupravit. K tomu nám stačí upravit barvu, pozměnit tvar koule a trochu se pohrabat v nastavení, jako například dodat blur, a tím odstraníme nechtěné mezery mezi koulemi. Díky tomu už program opravdu vypadá jako simulace opravdové vody.
-
 ![Alt text](obrazky/obr1.png)
+### Postup
+Kdybysme popsali postup trochu potrobněji, tak jako první musíme vytvořit nějaký libovolný platformy a dát jim rigidbody a box colidor. Nezapoměnte taky změnit v inspectoru nastevení rigidbody na static, jinak by vám při spuštění programu všechny platformy spadly dolů. Díky této změně ale nebudou ovlivněny gravitací a zůstanou na místě.
+![Alt text](obrazky/obr6.png)
+Dál musíme přidat již zmíněné tvary, které budou tvořit naši vodu. Ze začátku přidáme jedno kolečko do scény a dáme tomu circle colidor a rigidbody. Pak přesuneme tuto kouli do našich assetů, abysme z toho vytvořili prefab. Potom už můžem jen nakopírovat hromadu koleček vedle sebe tam, kde chcete aby byla voda.
+![Alt text](obrazky/obr7.png)
+Jako poslední krok nám už teď zbývá přidat jenom texturu, aby to opravdu vypdalo jako voda a ne jenom jako hromada koleček. Jako první přidáme sprite na náš prefab koleček, aby spolu lépe splívali.
+![Alt text](obrazky/obr8.png)
+A potom nám už zbývá jenom přidat tento shader graph:
+![Alt text](obrazky/obr5.png)
+a máme hotovo.
+![Alt text](obrazky/obr1.png)
+Kdybysme teď program spustili tak všechny kolečka začnou padat a narážet na sebe a platformy. Díky úpravám, které jsme přidali to vypadá jako skutečná voda.
 ![Alt text](obrazky/obr2.png)
 ![Alt text](obrazky/obr3.png)
 ![Alt text](obrazky/obr4.png)
