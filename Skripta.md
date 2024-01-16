@@ -57,11 +57,11 @@ Jako poslední věc si dnes ukážeme praktickou ukázku. Podíváme se a vysvě
 ![Alt text](obrazky/obr1.png)
 ### Postup
 Kdybysme popsali postup trochu potrobněji, tak jako první musíme vytvořit nějaký libovolný platformy a dát jim rigidbody a box colidor. Nezapoměnte taky změnit v inspectoru nastevení rigidbody na static, jinak by vám při spuštění programu všechny platformy spadly dolů. Díky této změně ale nebudou ovlivněny gravitací a zůstanou na místě.
-![Alt text](obrazky/obr6.png)
+![Alt text](obrazky/obr8.png)
 Dál musíme přidat již zmíněné tvary, které budou tvořit naši vodu. Ze začátku přidáme jedno kolečko do scény a dáme tomu circle colidor a rigidbody. Pak přesuneme tuto kouli do našich assetů, abysme z toho vytvořili prefab. Potom už můžem jen nakopírovat hromadu koleček vedle sebe tam, kde chcete aby byla voda.
 ![Alt text](obrazky/obr7.png)
 Jako poslední krok nám už teď zbývá přidat jenom texturu, aby to opravdu vypdalo jako voda a ne jenom jako hromada koleček. Jako první přidáme sprite na náš prefab koleček, aby spolu lépe splívali.
-![Alt text](obrazky/obr8.png)
+![Alt text](obrazky/obr6.png)
 A potom nám už zbývá jenom přidat tento shader graph:
 ![Alt text](obrazky/obr5.png)
 a máme hotovo.
