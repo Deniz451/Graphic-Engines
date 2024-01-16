@@ -60,7 +60,7 @@ Kdybysme popsali postup trochu potrobněji, tak jako první musíme vytvořit n�
 ![Alt text](obrazky/obr8.png)
 Dál musíme přidat již zmíněné tvary, které budou tvořit naši vodu. Ze začátku přidáme jedno kolečko do scény a dáme tomu circle colidor a rigidbody. Pak přesuneme tuto kouli do našich assetů, abysme z toho vytvořili prefab. Potom už můžem jen nakopírovat hromadu koleček vedle sebe tam, kde chcete aby byla voda.
 ![Alt text](obrazky/obr7.png)
-Jako poslední krok nám už teď zbývá přidat jenom texturu, aby to opravdu vypdalo jako voda a ne jenom jako hromada koleček. Jako první přidáme sprite na náš prefab koleček, aby spolu lépe splívali.
+Jako poslední krok nám už teď zbývá přidat jenom texturu, aby to opravdu vypdalo jako voda a ne jenom jako hromada koleček. Jako první přidáme sprite na náš prefab koleček a změníme mu barvu na modrou, aby spolu lépe splívali a vypadaly více jako voda.
 ![Alt text](obrazky/obr6.png)
 A potom nám už zbývá jenom přidat tento shader graph:
 ![Alt text](obrazky/obr5.png)
